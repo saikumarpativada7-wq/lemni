@@ -12,7 +12,7 @@
         * { box-sizing: border-box; margin: 0; padding: 0; }
 
         /* LOCKED VIEWPORT: Prevents scrolling on mobile for app-like feel */
-        body { font-family: 'Inter', sans-serif; touch-action: manipulation; background-color: #000000; min-height: 100vh; height: 100vh; overflow: hidden; }
+        body { font-family: 'Inter', sans-serif; touch-action: manipulation; background-color: #000000; min-height: 100dvh; height: 100dvh; overflow: hidden; }
         .form-input:focus, .form-select:focus, .btn:focus { outline: none; box-shadow: 0 0 0 3px rgba(163, 163, 163, 0.5); border-color: #a3a3a3; }
         .correct-answer { animation: flash-green 0.5s ease; }
         .incorrect-answer { animation: flash-red 0.5s ease; }
@@ -504,7 +504,7 @@
 
     <!-- Game Screen -->
     <!-- Full Height with internal scrolling -->
-    <div id="game-screen" class="hidden bg-neutral-900 p-4 sm:p-6 rounded-2xl shadow-lg flex flex-col items-center w-full h-full sm:h-auto relative">
+   <div id="game-screen" class="hidden bg-neutral-900 p-4 sm:p-6 rounded-2xl shadow-lg flex flex-col items-center w-full h-full sm:h-auto relative overflow-y-auto">
         <!-- Moved Game Pause Button into the Header Grid below to prevent overlap -->
 
         <!-- UPDATED GRID LAYOUT for HEADER: Reduced margins (mb-2 mt-4) to save vertical space -->
